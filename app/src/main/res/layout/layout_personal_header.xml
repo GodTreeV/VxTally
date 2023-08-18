@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/userHeader"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginStart="@dimen/dp_12"
+        app:shapeAppearanceOverlay="@style/RoundRectStyle"
+        />
+
+    <TextView
+        android:id="@+id/userName"
+        app:layout_constraintStart_toEndOf="@+id/userHeader"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:text="Test"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/dp_14"
+        android:paddingVertical="@dimen/dp_10"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/userCount"
+        app:layout_constraintStart_toEndOf="@+id/userHeader"
+        app:layout_constraintTop_toBottomOf="@id/userName"
+        android:layout_width="wrap_content"
+        android:text="Test"
+        android:layout_marginStart="@dimen/dp_14"
+        android:textSize="@dimen/sp_14"
+        android:paddingVertical="@dimen/dp_10"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:id="@+id/otherViews2"
+        android:layout_marginEnd="@dimen/dp_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_12"
+            android:src="@drawable/baseline_add_24"
+            />
+
+        <ImageView
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_12"
+            android:src="@drawable/baseline_add_24"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/otherViews"
+        app:layout_constraintStart_toEndOf="@id/userHeader"
+        app:layout_constraintTop_toBottomOf="@id/userCount"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:text="test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapoe_text"
+            android:paddingVertical="@dimen/dp_3"
+            android:paddingHorizontal="@dimen/dp_5"
+            android:drawableLeft="@drawable/baseline_add_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapoe_text"
+            android:paddingVertical="@dimen/dp_3"
+            android:paddingHorizontal="@dimen/dp_5"
+            android:layout_marginStart="@dimen/dp_8"
+            android:drawableLeft="@drawable/baseline_add_24" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

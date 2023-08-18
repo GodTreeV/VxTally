@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:background="#1A000000"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".pages.ServiceActivity">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            app:navigationIcon="@drawable/baseline_arrow_back_ios_24"
+            app:title="Service"
+            app:titleCentered="true"
+            android:layout_height="@dimen/dp_56"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/headerCard"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="@dimen/dp_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:paddingVertical="@dimen/dp_24"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/outAndGet"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:drawableTop="@mipmap/ic_launcher"
+                    android:layout_height="wrap_content"
+                    android:text="outAndGet"
+                    />
+
+                <TextView
+                    android:id="@+id/ballet"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:drawableTop="@mipmap/ic_launcher"
+                    android:layout_height="wrap_content"
+                    android:text="ballet"
+                    />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</layout>
