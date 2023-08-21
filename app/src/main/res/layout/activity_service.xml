@@ -20,6 +20,7 @@
             app:navigationIcon="@drawable/baseline_arrow_back_ios_24"
             app:title="Service"
             app:titleCentered="true"
+            app:menu="@menu/bottom_navigation_menu"
             android:layout_height="@dimen/dp_56"/>
 
         <com.google.android.material.card.MaterialCardView

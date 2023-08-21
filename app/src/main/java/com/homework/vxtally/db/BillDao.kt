@@ -13,6 +13,12 @@ interface BillDao {
     @Query("SELECT * FROM table_bill")
     suspend fun getAllBills(): List<Bill>
 
+    @Query("SELECT * FROM table_bill WHERE isOut == 0")
+    suspend fun getOutBills(): List<Bill>
+
+    @Query("SELECT * FROM table_bill WHERE isOut == 1")
+    suspend fun getInBills(): List<Bill>
+
     @Insert
     suspend fun addBill(bill: Bill)
 

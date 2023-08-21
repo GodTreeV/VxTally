@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VxTally">
         <activity
+            android:name=".pages.bill.BillStatisticsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.bill.BillActivity"
+            android:exported="false" />
+        <activity
             android:name=".pages.IOActivity"
             android:exported="false" />
         <activity

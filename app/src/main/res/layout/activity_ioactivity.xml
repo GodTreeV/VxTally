@@ -7,23 +7,16 @@
 
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".pages.IOActivity">
 
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/vp2"
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainer"
+            android:name="com.homework.vxtally.pages.IOFragment"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@+id/navigation" />
+            android:layout_height="match_parent"/>
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/navigation"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/dp_56"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
 </layout>
