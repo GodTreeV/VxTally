@@ -93,7 +93,7 @@ class IOFragment : BaseFragment<FgIoBinding>() {
                 }
 
                 newBill.title = nameStr
-                newBill.money = moneyStr.toLong()
+                newBill.money = moneyStr.toFloat()
 
                 logE { "Commit to DB: bill = $newBill" }
 

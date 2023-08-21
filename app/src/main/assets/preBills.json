@@ -1,0 +1,100 @@
+{
+  "bills": [
+    {
+      "billId": 1,
+      "title": "支付宝商家",
+      "money": 21,
+      "icon": "",
+      "time": 1672588800258,
+      "isOut": true
+    },
+    {
+      "billId": 2,
+      "title": "KFC网上收款",
+      "money": 49.8,
+      "icon": "",
+      "time": 1680624000258,
+      "isOut": true
+    },
+    {
+      "billId": 3,
+      "title": "必胜客",
+      "money": 109,
+      "icon": "",
+      "time": 1681660800258,
+      "isOut": true
+    },
+    {
+      "billId": 4,
+      "title": "特斯拉代理商",
+      "money": 2639,
+      "icon": "",
+      "time": 1672934400258,
+      "isOut": false
+    },
+    {
+      "billId": 5,
+      "title": "淘宝",
+      "money": 9.9,
+      "icon": "",
+      "time": 1672588800258,
+      "isOut": true
+    },
+    {
+      "billId": 6,
+      "title": "985大肉面",
+      "money": 25,
+      "icon": "",
+      "time": 1691510400258,
+      "isOut": false
+    },
+    {
+      "billId": 7,
+      "title": "青桔骑行",
+      "money": 3.5,
+      "icon": "",
+      "time": 1691942400258,
+      "isOut": true
+    },
+    {
+      "billId": 8,
+      "title": "支付宝商家0000452121",
+      "money": 99,
+      "icon": "",
+      "time": 1672588800258,
+      "isOut": false
+    },
+    {
+      "billId": 9,
+      "title": "转账",
+      "money": 100,
+      "icon": "",
+      "time": 1692547200258,
+      "isOut": true
+    },
+    {
+      "billId": 10,
+      "title": "咸鱼转账",
+      "money": 750,
+      "icon": "",
+      "time": 1692547900258,
+      "isOut": true
+    },
+    {
+      "billId": 11,
+      "title": "淘宝2",
+      "money": 21,
+      "icon": "",
+      "time": 1681690800258,
+      "isOut": false
+    },
+    {
+      "billId": 12,
+      "title": "花呗",
+      "money": 55,
+      "icon": "",
+      "time": 1672588800258,
+      "isOut": true
+    }
+  ]
+}

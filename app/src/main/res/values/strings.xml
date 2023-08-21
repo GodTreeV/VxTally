@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">VxTally</string>
+
+    <string name="bill_counts">共%1s%2s笔, 合计</string>
 </resources>

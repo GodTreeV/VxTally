@@ -13,7 +13,7 @@ object DateAndTimePickers {
     /**
      * Default format pattern
      */
-    private const val PATTERN = "yyyy/MM/dd HH:mm:ss"
+    const val PATTERN = "yyyy/MM/dd HH:mm:ss"
 
     fun showTimePickerDialog(
         fragmentActivity: FragmentActivity,

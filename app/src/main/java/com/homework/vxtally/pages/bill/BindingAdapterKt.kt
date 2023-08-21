@@ -6,6 +6,7 @@ import android.graphics.Color
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
+import com.bumptech.glide.Glide
 import com.homework.vxtally.R
 import com.homework.vxtally.base.DateAndTimePickers
 import com.homework.vxtally.db.bean.Bill
@@ -15,7 +16,7 @@ fun setImage(view: ImageView, bill: Bill) {
     BitmapFactory.decodeFile(bill.icon)?.let {
         view.setImageBitmap(it)
     } ?: run {
-        view.setImageResource(R.drawable.ic_launcher_foreground)
+        Glide.with(view.context).load("https://img1.baidu.com/it/u=139610508,1614409688&fm=253&fmt=auto&app=138&f=PNG?w=500&h=500").into(view)
     }
 }
 

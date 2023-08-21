@@ -32,7 +32,7 @@
                 android:layout_gravity="start"
                 android:layout_marginStart="@dimen/dp_12"
                 android:background="@drawable/shape1"
-                android:drawableRight="@drawable/baseline_close_24"
+                android:drawableRight="@drawable/baseline_arrow_drop_down_24"
                 android:gravity="center"
                 android:padding="@dimen/dp_6"
                 android:text="全部账单" />
@@ -44,7 +44,7 @@
                 android:layout_gravity="end"
                 android:layout_marginEnd="@dimen/dp_12"
                 android:background="@drawable/shape1"
-                android:drawableRight="@drawable/baseline_close_24"
+                android:drawableRight="@drawable/baseline_arrow_right_24"
                 android:gravity="center"
                 android:padding="@dimen/dp_6"
                 android:text="统计" />

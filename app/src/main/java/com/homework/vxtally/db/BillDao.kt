@@ -19,6 +19,9 @@ interface BillDao {
     @Query("SELECT * FROM table_bill WHERE isOut == 1")
     suspend fun getInBills(): List<Bill>
 
+    @Query("SELECT * FROM TABLE_BILL WHERE time >= :lower AND time < :upper")
+    suspend fun getBillsByTimeRange(lower: Long, upper: Long): List<Bill>
+
     @Insert
     suspend fun addBill(bill: Bill)
 

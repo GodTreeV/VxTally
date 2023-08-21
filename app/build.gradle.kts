@@ -60,4 +60,8 @@ dependencies {
     ksp("androidx.room:room-compiler:$room_version")
 
     implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+
+    implementation("com.google.code.gson:gson:2.10.1")
+
+    implementation("com.github.bumptech.glide:glide:4.16.0")
 }
