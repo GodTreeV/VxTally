@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.content.ReceiverCallNotAllowedException
+import android.graphics.Color
 import android.os.Bundle
 import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.data.BarData
@@ -157,8 +158,6 @@ class BillStatisticsActivity : BaseBindingActivity<ActivityBillStatisticsBinding
                     }
                 }
 
-                logE { "asdasdsad $billList" }
-
                 val billMap = mutableMapOf<Int, Float>()
 
                 billList.forEach {
@@ -190,6 +189,7 @@ class BillStatisticsActivity : BaseBindingActivity<ActivityBillStatisticsBinding
 
                     barChart.xAxis.apply {
                         setDrawGridLines(false)
+                        setDrawAxisLine(false)
                         position = XAxis.XAxisPosition.BOTTOM
                         valueFormatter = object : ValueFormatter() {
                             override fun getFormattedValue(value: Float): String {
@@ -202,6 +202,9 @@ class BillStatisticsActivity : BaseBindingActivity<ActivityBillStatisticsBinding
                         barEntries,
                         "账单(${if (currentBillType == BillType.TYPE_OUT) "支出" else "收入"})"
                     )
+
+                    barDataSet.color = getColor(R.color.md_theme_light_primary)
+
                     barChart.data = BarData(barDataSet)
 
                     barChart.invalidate()

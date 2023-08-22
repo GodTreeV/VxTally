@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingVertical="@dimen/dp_12"
     tools:ignore="MissingDefaultResource">
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -12,8 +13,8 @@
         android:layout_height="@dimen/dp_80"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/ic_launcher_background"
         android:layout_marginStart="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_12"
         app:shapeAppearanceOverlay="@style/RoundRectStyle"
         />
 
@@ -22,7 +23,7 @@
         app:layout_constraintStart_toEndOf="@+id/userHeader"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="wrap_content"
-        android:text="Test"
+        android:text="啾咪!"
         android:textSize="@dimen/sp_16"
         android:textStyle="bold"
         android:layout_marginStart="@dimen/dp_14"
@@ -34,7 +35,7 @@
         app:layout_constraintStart_toEndOf="@+id/userHeader"
         app:layout_constraintTop_toBottomOf="@id/userName"
         android:layout_width="wrap_content"
-        android:text="Test"
+        android:text="微信号: AndroidMfk"
         android:layout_marginStart="@dimen/dp_14"
         android:textSize="@dimen/sp_14"
         android:paddingVertical="@dimen/dp_10"
@@ -75,7 +76,7 @@
         android:layout_height="wrap_content"
         >
         <TextView
-            android:text="test"
+            android:text="状态"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/shapoe_text"

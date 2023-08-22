@@ -8,53 +8,52 @@
     </data>
 
     <LinearLayout
-        android:background="#1A000000"
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".pages.ServiceActivity">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            app:navigationIcon="@drawable/baseline_arrow_back_ios_24"
-            app:title="Service"
-            app:titleCentered="true"
+            android:layout_height="@dimen/dp_56"
             app:menu="@menu/bottom_navigation_menu"
-            android:layout_height="@dimen/dp_56"/>
+            app:navigationIcon="@drawable/baseline_arrow_back_ios_24"
+            app:title="服务"
+            app:titleCentered="true" />
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/headerCard"
-            app:cardBackgroundColor="#FFFFFF"
-            app:cardCornerRadius="@dimen/dp_8"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dp_12"
+            android:layout_marginHorizontal="@dimen/dp_12"
+            app:cardBackgroundColor="@color/md_theme_dark_primary"
+            app:cardCornerRadius="@dimen/dp_8">
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:paddingVertical="@dimen/dp_24"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/dp_24">
 
                 <TextView
                     android:id="@+id/outAndGet"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:gravity="center_horizontal"
-                    android:drawableTop="@mipmap/ic_launcher"
                     android:layout_height="wrap_content"
-                    android:text="outAndGet"
-                    />
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/shoufukuang"
+                    android:gravity="center_horizontal"
+                    android:text="收入支出" />
 
                 <TextView
                     android:id="@+id/ballet"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:gravity="center_horizontal"
-                    android:drawableTop="@mipmap/ic_launcher"
                     android:layout_height="wrap_content"
-                    android:text="ballet"
-                    />
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/a1111"
+                    android:gravity="center_horizontal"
+                    android:text="钱包" />
 
             </LinearLayout>
 

@@ -15,7 +15,7 @@ class BillItemDecoration : ItemDecoration() {
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
         color = Color.GRAY
         style = Paint.Style.FILL
-        strokeWidth = 2f
+        strokeWidth = 0.5f
     }
 
     override fun onDraw(c: Canvas, parent: RecyclerView, state: RecyclerView.State) {

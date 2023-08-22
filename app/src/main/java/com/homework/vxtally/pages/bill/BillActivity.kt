@@ -37,6 +37,10 @@ class BillActivity : BaseBindingActivity<ActivityBillBinding>() {
         with(viewBinding) {
             billList.adapter = billAdapter
 
+            toolbar.setNavigationOnClickListener {
+                finishAndRemoveTask()
+            }
+
             billType.setOnClickListener {
                 TypeDialogFragment(this@BillActivity).apply {
                     show(supportFragmentManager, "")
